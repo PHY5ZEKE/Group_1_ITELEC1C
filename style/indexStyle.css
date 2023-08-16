@@ -1,0 +1,14 @@
+/* Change the background color of the navbar */
+.navbar {
+    background-color: #000c38; /* You can replace this color with your desired color */
+  }
+  
+  /* Change the color of the navbar links */
+  .navbar-nav .nav-link {
+    color: white; /* You can replace this color with your desired color */
+  }
+  
+  /* Change the color of the active link */
+  .navbar-nav .nav-link.active {
+    color:white; /* You can replace this color with your desired color */
+  }
