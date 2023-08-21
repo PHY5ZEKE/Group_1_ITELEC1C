@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fcfcfc;
+}
+
+/*Header or Navbar*/
+header {
+  width: 100%;
+  background-color: #000C38;
+}
+.navbar {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.nav-logo img {
+  margin-top: 10px;
+  width: 128px;
+  height: auto;
+}
+
+.sign-in p {
+  font-size: 0.75rem;
+}
+.sign-in {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.cart {
+  display: flex;
+}
+.cart .cart-icon {
+  font-size: 2.5rem
+}
+.cart p {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.headb {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 35px;
+}
+/*End of Header or Navbar*/
+
+/*Search*/
+.nav-search {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    min-width: 200px;
+    max-width: 75%;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  
+  .nav-search input {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid  rgb(176 190 197);
+    background-color: transparent;
+    padding: 0.625rem 70px 0.625rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    outline: none;
+  }
+  
+  .search-btn {
+    position: absolute;
+    width: 150px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 10;
+    border-radius: 50px;
+    background-color: #A0E0F4;
+    color: #000;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-btn i {
+    color: #000;
+    font-size: 18px;
+  }
+  /*End of Search*/
+
+  /*Product Listing Container*/
+ .container {
+  background-color: #03022d;
+  height: 126.7rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  }
+  .productlistingbox {
+    background-color: #ddf6ff;
+    border-radius: 6.4rem;
+    height: 70.6rem;
+    left: 7rem;
+    position: absolute;
+    top: 28.1rem;
+    width: 93.9rem;
+  }
+  .productlisting {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 4.8rem;
+    font-weight: 800;
+    height: 5.9rem;
+    left: 37.6rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 33.2rem;
+    white-space: nowrap;
+    width: 39.5rem;
+  }
+  .dragdrop {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 2rem;
+    left: 22.5rem;
+    letter-spacing: -0.04rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 68.2rem;
+    white-space: nowrap;
+    width: 19.4rem;
+  }
+  .upload {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 14.1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 45.2rem;
+    white-space: nowrap;
+    width: 12.3rem;
+  }
+  .productname {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 57.5rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 44.4rem;
+    white-space: nowrap;
+    width: 14.7rem;
+  }
+  .productprice{
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 57.5rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 53.3rem;
+    white-space: nowrap;
+    width: 13.7rem;
+  }
+  .productdescription {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 57.5rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 62.3rem;
+    white-space: nowrap;
+    width: 20.2rem;
+  }
+  .producttags {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 57.5rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 71.3rem;
+    white-space: nowrap;
+    width: 13.3rem;
+  }
+  .addphoto{
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 3.9rem;
+    left: 14.1rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 47.4rem;
+    width: 22.7rem;
+  }
+  .or {
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 28.2rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 71rem;
+    white-space: nowrap;
+    width: 4.6rem;
+  }
+  .upllogo {
+    height: 8rem;
+    left: 26.5rem;
+    object-fit: cover;
+    position: absolute;
+    top: 59.2rem;
+    vertical-align: top;
+    width: 8.1rem;
+  }
+  .browsebox {
+    background-color: #03022d;
+    border-radius: 5.1995rem;
+    height: 4rem;
+    left: 19.2rem;
+    position: absolute;
+    top: 75.1rem;
+    width: 22.7rem;
+  }
+  .browsefiles {
+    color: #ffffff;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 23.9rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 75.7rem;
+    white-space: nowrap;
+    width: 12.7rem;
+  }
+  .productnamebox {
+    border: dashed 0.2rem #000000;
+    box-sizing: border-box;
+    height: 30.6rem;
+    left: 14.1rem;
+    position: absolute;
+    top: 53.6rem;
+    width: 32.9rem;
+  }
+  .productpricebox {
+    background-color: #ffffff;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.5rem;
+    left: 57.5rem;
+    position: absolute;
+    top: 48.2rem;
+    width: 38.9rem;
+  }
+  .productdescriptionbox {
+    background-color: #ffffff;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.5rem;
+    left: 57.5rem;
+    position: absolute;
+    top: 57.2rem;
+    width: 38.9rem;
+  }
+  .producttagsbox {
+    background-color: #ffffff;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.5rem;
+    left: 57.5rem;
+    position: absolute;
+    top: 66.1rem;
+    width: 38.9rem;
+  }
+  .productbox {
+    background-color: #ffffff;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.5rem;
+    left: 57.5rem;
+    position: absolute;
+    top: 75.1rem;
+    width: 38.9rem;
+  }
+  .productsubmit{
+    background-color: #fdc500;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.4rem;
+    left: 57.5rem;
+    position: absolute;
+    top: 80.8rem;
+    width: 18.9rem;
+  }
+  .productcancel{
+    background-color: #02012d;
+    border: solid 0.1rem #000000;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 3.5rem;
+    left: 77.4rem;
+    position: absolute;
+    top: 80.6rem;
+    width: 19rem;
+  }
+  .submit{
+    color: #000000;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 63.6rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 81.4rem;
+    white-space: nowrap;
+    width: 7.3rem;
+  }
+  .cancel {
+    color: #ffffff;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 700;
+    height: 2.5rem;
+    left: 83.5rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2175;
+    position: absolute;
+    top: 81.3rem;
+    white-space: nowrap;
+    width: 6.9rem;
+  }
+
+
+/*Banner*/
+.banner {
+    padding: 20px 20px;
+    background: #000C38;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+  }
+  .banner-content {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /*Categories*/
+  .navigation {
+    position: relative;
+    right: 10px;
+    width: 230px;
+    height: 60px;
+    background: #A0E0F4;
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .navigation.active {
+    height: 280px;
+    transition: height 0.5s;
+    transition-delay: 0s, 0.75s;
+  }
+  
+  .navigation .userBx {
+    position: relative;
+    width: auto;
+    height: 60px;
+    background: #A0E0F4;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .navigation.active .userBx {
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+  }
+  
+  .navigation .userBx .username {
+    white-space: nowrap;
+    color: #000000;
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+  
+  /* Hamburguer toggle menu */
+  .navigation .menuToggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #A0E0F4;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation .menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #000000;
+    transition: 0.5s;
+  }
+  .navigation .menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+  .navigation.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #000000;
+  }
+  .navigation.active .menuToggle::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  .menu {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    padding-left: 25px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 1em;
+    text-decoration: none;
+    color: #000000;
+  }
+  .menu li a:hover {
+    color: #fff;
+    font-weight: bold;
+  }
+  /*End of Hamburger menu*/
+  
+  .links {
+    display: flex;
+    position: inherit;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    flex-grow: 1;
+    margin-left: 15px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    font-weight: bold;
+  }
+  
+  .links li a:hover{
+    color: #A0E0F4;
+  }
+  /*End of Banner*/
+
+  /* Footer */
+.footer-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    background: #000C38;
+  }
+  
+  .footer-items h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+  }
+  
+  .footer-items ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .footer-items li a {
+    color: #ddd;
+    font-size: 0.875rem;
+  }
+  
+  .footer-items li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-items p img {
+    width: 150px;
+    height: 200px;
+  }
+  
+  .footer-items p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 25px 0;
+  }
+  /*End of Footer*/
