@@ -265,7 +265,6 @@ header {
 
 .cover-photo{
     height: 300px;
-    margin: 20px;
     position: relative;
     overflow:hidden;
     background: gray;
@@ -277,10 +276,10 @@ header {
 
 .profile-info{
     height: 200px;
-    margin-left: 20px;
+    
     margin-top: -75px;
     margin-bottom: 20px;
-    margin-right: 20px;
+ 
     position: relative;
     background: #A0E0F4;
     

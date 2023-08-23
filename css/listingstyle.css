@@ -122,6 +122,7 @@ header {
 
   /*Product Listing Container*/
  .container {
+  
   background-color: #03022d;
   height: 126.7rem;
   overflow: hidden;
@@ -129,13 +130,16 @@ header {
   width: 100%;
   }
   .productlistingbox {
+    display:flex;
+  justify-content:center;
+  align-items: center;
     background-color: #ddf6ff;
     border-radius: 6.4rem;
     height: 70.6rem;
     left: 7rem;
-    position: absolute;
-    top: 28.1rem;
-    width: 93.9rem;
+    margin: 27% auto;
+    max-width: 1530px;
+  width: 100%;
   }
   .productlisting {
     color: #000000;
