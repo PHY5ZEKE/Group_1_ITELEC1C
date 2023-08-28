@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/listStyle.css">
+</head>
+<body>
+    <link rel="stylesheet" href="css/listStyle.css">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="image">Upload Image/Files</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-image"></i></span>
+                </div>
+                <input type="file" class="form-control" id="image" name="image" accept="image/*, .pdf, .docx">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary"><i class="fas fa-upload"></i> Upload</button>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <h2 class="text-center">Product Listing</h2>
+              <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" class="form-control" id="productName" name="productName">
+              </div>
+              <div class="form-group">
+                <label for="productPrice">Product Price</label>
+                <input type="number" class="form-control" id="productPrice" name="productPrice">
+              </div>
+              <div class="form-group">
+                <label for="productDescription">Product Description</label>
+                <textarea class="form-control" id="productDescription" name="productDescription"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="productTags">Product Tags</label>
+                <select class="form-control" id="productTags" name="productTags">
+                  <option value="tag1">Tag 1</option>
+                  <option value="tag2">Tag 2</option>
+                  <option value="tag3">Tag 3</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-warning rounded-circle"><i class="fas fa-check"></i>Submit</button>
+              <button type="button" class="btn btn-dark ml-2"><i class="fas fa-times"></i> Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

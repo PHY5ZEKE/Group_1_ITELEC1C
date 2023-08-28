@@ -9,20 +9,35 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #eef4f7;
+  background-color: #eef4f7;
 }
-.container{
+.navbar {
+  background-color: #000c38; /* You can replace this color with your desired color */
+}
+
+/* Change the color of the navbar links */
+.navbar-nav .nav-link {
+  color: white; /* You can replace this color with your desired color */
+}
+
+/* Change the color of the active link */
+.navbar-nav .nav-link.active {
+  color:white; /* You can replace this color with your desired color */
+}
+
+.lform{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   max-width: 430px;
+  padding: 30px;
   width: 100%;
   background: #000c38;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
-.container .registration{
+.lform .registration{
   display: none;
 }
 #check:checked ~ .registration{
