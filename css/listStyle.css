@@ -1,110 +1,165 @@
-body
-{
-    background-color: #000C38;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poppins&display=swap");
+
+body {
+  background-color: #000c38;
+  font-family: "Poppins", sans-serif;
 }
+:root {
+  --bgcolor: #a0e0f4;
+  --secondarycolor: #001459;
+  --subcolor: #ffc107;
+  --hover-color: #040020;
+}
+h1 {
+  font-weight: bold;
+}
+.row {
+  margin-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   margin-top: 100px;
-    background-color: #A0E0F4;
-    max-width: 600px; /* Set a maximum width for the container */
-     padding: 20px;
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
-  }
-  
-  /* Adjust spacing and padding */
-  .row {
-    margin-top: 20px;
-  }
-  
-  /* Style the form header */
-  .form-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the upload button */
-  .upload-btn {
-    width: 100%;
-  }
-  
-  /* Style the icon and button in the upload section */
-  .upload-icon {
-    font-size: 36px;
-    margin-right: 10px;
-  }
-  
-  /* Style the product form */
-  .product-form {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-  }
-  
-  /* Style the submit button */
-  .submit-btn {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  /* Style the cancel button */
-  .cancel-btn {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  /* Style the form labels */
-  .form-label {
-    font-weight: bold;
-  }
-  
-  /* Add spacing to the bottom of form groups */
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  /* Adjust select dropdown width */
-  .form-control-select {
-    width: 100%;
-  }
-  
-  /* Adjust textarea height */
-  .form-control-textarea {
-    height: 100px;
-  }
-  
-  /* Center the submit and cancel buttons */
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Style rounded buttons */
-  .rounded-btn {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-  }
-  
-  /* Style colors for buttons */
-  .submit-btn {
-    background-color: #ffc107;
-    border-color: #ffc107;
-  }
-  
-  .cancel-btn {
-    background-color: #343a40;
-    border-color: #343a40;
-  }
-  
-  /* Style button icons */
-  .btn-icon {
-    margin-right: 5px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: var(--bgcolor);
+  max-width: 800px; /* Set a maximum width for the container */
+  width: 80%;
+  padding: 40px 25px;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+/* Style the form header */
+.form-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/*Upload Images/File Section*/
+.upload-section {
+  flex-grow: 1; /* Expand to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+p{
+  padding-top: 5px;
+}
+.custom-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-file-upload .icon svg {
+  height: 80px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custom-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custom-file-upload input {
+  display: none;
+}
+.selected-file-label {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+/*End of Upload Image/File Section*/
+
+/*Form Section*/
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 2px solid transparent; 
+  border-color: var(--secondary-color); 
+  background-color: white;
+  box-shadow: 4px 4px 8px 0px var(--secondary-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+/* Adjust select dropdown width */
+.form-control-select {
+  width: 100%;
+}
+
+/* Adjust textarea height */
+.form-control-textarea {
+  height: 100px;
+}
+
+/* Center the submit and cancel buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  margin-top: 10px;
+}
+
+.custom-button {
+  flex: 1;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #fff;
+}
+.custom-button:hover {
+  background-color: var(--hover-color); 
+  border-color: var(--hover-color);
+}
+
+.submit-btn {
+  background-color: var(--subcolor);
+  border-color: var(--secondarycolor);
+}
+
+.cancel-btn {
+  background-color: var(--secondarycolor);
+  border-color: var(--secondarycolor);
+}
+
+
+/*End of Form Section*/
